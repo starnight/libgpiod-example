@@ -1,8 +1,8 @@
 # libgpiod Example
 
-This is a set of [libgpiod](https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/) examples.
+This is a set of [libgpiod](https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/) examples for v1.x branch.
 
-Refer to the API: https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/tree/include/gpiod.h
+Refer to the API: https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/tree/include/gpiod.h?h=v1.6.x
 
 libgpiod introduction video: https://www.youtube.com/watch?v=76j3TIqTPTI
 
