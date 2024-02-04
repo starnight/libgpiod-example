@@ -11,7 +11,7 @@ void banner(char *progName)
     printf("%s: \n", progName);
     printf("     -u/h  : Usage message \n");
     printf("     -n    : Number of GPIO controller to scan, Default range [0,1) \n");
-    printf("     -l    : Line number to search in GPIO controllersi, Default 0 \n");
+    printf("     -l    : Line number to search in GPIO controllers, Default 0 \n");
 }
 /* libgpiod client to scan all possible GPIO controller for a given GPIO Line */
 int main(int argc, char **argv)
@@ -21,9 +21,8 @@ int main(int argc, char **argv)
     int numDevices = -1;
     int numLine = -1;
 
-    // Boilerplate command line arguments processing
+    /* Boilerplate command line arguments processing */
     while((optIn = getopt(argc, argv, "uhn:l:")) != EOF) {
-        printf("getopt loop running\n");
         switch(optIn) {
             case 'u':
             case 'h':

@@ -22,7 +22,7 @@ void banner(char *progName)
     std::cout << std::string(progName) << std::endl;
     std::cout << "     -u/h  : Usage message " << std::endl;
     std::cout << "     -n    : Number of GPIO controller to scan, Default range [0,1)" << std::endl;
-    std::cout << "     -l    : Line number to search in GPIO controllersi, Default 0" << std::endl;
+    std::cout << "     -l    : Line number to search in GPIO controllers, Default 0" << std::endl;
 }
 
 /* Asynchronous operator managing callbacks from libgpiod */
@@ -119,7 +119,6 @@ int main(int argc, char **argv)
 
     /* Boilerplate command line arguments processing */
     while((optIn = getopt(argc, argv, "uhn:l:")) != EOF) {
-        printf("getopt loop running\n");
         switch(optIn) {
             case 'u':
             case 'h':
