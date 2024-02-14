@@ -13,3 +13,8 @@ libgpiod introduction video: https://www.youtube.com/watch?v=76j3TIqTPTI
 3. libgpiod-event: Interrupt as an event example
 4. libgpiod-scan: Scanning GPIO devices example
 5. libgpiod-monitor: Monitoring GPIO line example with C++
+
+## Contribution
+
+* Pull requests are welcome
+* Each example should be in a folder with prefix "libgpiod-"
