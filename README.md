@@ -18,3 +18,4 @@ libgpiod introduction video: https://www.youtube.com/watch?v=76j3TIqTPTI
 
 * Pull requests are welcome
 * Each example should be in a folder with prefix "libgpiod-"
+* Should pass the Build test
