@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare
+        run: |
+         sudo apt update -y
+         sudo apt install --no-install-recommends gcc g++ make libgpiod-dev -y
+
+      - name: Build
+        run: |
+          dirs=$(find ${PWD} -name libgpiod-\* -type d -maxdepth 1 -mindepth 1)
+          for d in $dirs; do
+            cd $d
+            echo "Build ${PWD##*/}"
+            make
+          done
