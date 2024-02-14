@@ -11,3 +11,5 @@ libgpiod introduction video: https://www.youtube.com/watch?v=76j3TIqTPTI
 1. libgpiod-led: Output with LED example
 2. libgpiod-input: Input example
 3. libgpiod-event: Interrupt as an event example
+4. libgpiod-scan: Scanning GPIO devices example
+5. libgpiod-monitor: Monitoring GPIO line example with C++
